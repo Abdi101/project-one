@@ -114,7 +114,7 @@ img{
 
 #main .bg-image{
     position: absolute;
-    background-image: url(./images/bak.jpg);
+    background-image: url(../images/bak.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -198,15 +198,15 @@ p{
 }
 
 .card1-image{
-    background-image: url(./images/bachelor-downscaled.jpg);
+    background-image: url(../images/bachelor-downscaled.jpg);
 }
 
 .card2-image{
-    background-image: url(./images/year-downscaled.jpg);
+    background-image: url(../images/year-downscaled.jpg);
 }
 
 .card3-image{
-    background-image: url(./images/master-downscaled.jpg);
+    background-image: url(../images/master-downscaled.jpg);
 }
 
 .card1-image, .card2-image, .card3-image{
