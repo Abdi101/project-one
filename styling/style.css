@@ -1,0 +1,501 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eaeaea;
+    font-family: "paralucent",sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+/* this is for the logo of the page */
+.toggle, [id^=drop] {
+    display: none;
+}
+
+#logo{
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+#logo a{
+    margin: 0;
+    padding: 0;
+}
+
+#logo img{
+    max-width: 130px;
+    margin: 20px;
+    margin-left: 40px;
+}
+
+.toggle{
+    display: none;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: right;
+    background: #fff;
+    box-sizing: border-box;
+    font-size: 30px;
+   
+   
+}
+
+.fas {
+    text-align: center;
+    width: 30%;
+}
+
+
+.toggle h1{
+    width: 50%;
+    text-align: center;
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    background: #dde7f1;
+}
+    
+nav::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav ul li {
+    display: inline;
+    float: left;
+}
+
+nav a{
+    display: block;
+    padding: 14px 20px;
+    font-size: 17px;
+    color: rgb(75, 70, 70);
+    text-decoration: none;
+    margin-right: 40px;
+    text-transform: uppercase;
+}
+
+nav > ul >li>a:hover{
+    background-color: #3778af;
+    color: #fff;
+}
+
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+#main{
+    text-align: center;
+    min-height: 450px;
+}
+
+#main .bg-image{
+    position: absolute;
+    background-image: url(/images/bak.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    
+}
+
+.wave{
+    position: absolute;
+    bottom: 0px;
+    fill: #eaeaea;
+}
+
+#main h2{
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+h2, h3{
+    color: #00509e;
+    padding: 0.5em 0;
+}
+
+p{
+    font-size: 18px;
+}
+
+.center{
+    text-align: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5em;
+}
+
+#main .wrapper{
+    flex-direction: column;
+}
+
+.card{
+    width: 700px;
+    padding: 2em 0;
+}
+
+#section-one{
+    color: #333;
+    padding-bottom: 2em;
+}
+
+#section-two .offers-wrapper{
+    display: flex;
+    width: 930px; /* each item will have width 270 px */
+    margin: 0 auto 50px auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.offers-card{
+    background-color: #ccc;
+    width: 270px;
+    margin: 0 20px;
+}
+
+.offers-card h4{
+    padding: 0.2em;
+    margin: 0 auto;
+}
+
+.offers-card p{
+    padding: 0.5em 0 1em 0;
+}
+
+.card-title{
+    color: #333;
+}
+
+.card1-image{
+    background-image: url(/images/bachelor-downscaled.jpg);
+}
+
+.card2-image{
+    background-image: url(/images/year-downscaled.jpg);
+}
+
+.card3-image{
+    background-image: url(/images/master-downscaled.jpg);
+}
+
+.card1-image, .card2-image, .card3-image{
+    height: 185px;
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+footer{
+    width: 100%;
+    background-color: #2a2a2a;
+    color: #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 1.5em 12em;
+}
+
+footer a, footer a:visited, footer a:active{
+    color: #00509e;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #ccc;
+}
+
+footer .location, footer .follow{
+    flex: 50%;
+}
+
+.follow ul{
+    list-style: none;
+}
+
+
+
+
+
+
+.application-form{
+    margin: 0 auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.application-form .form-element{
+    padding: 0.2em 0.4em;
+    margin-bottom: 1em;
+}
+
+.application-form textarea{
+    font-family: "paralucent",sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.application-form input[type="submit"]{
+    width: 6em;
+    height: 2em;
+    margin: 0 auto 5em auto;
+    border: none;
+    background-color: orange;
+    font-weight: bold;
+    color: #333;
+}
+
+.application-form .form-horizontal-element{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.application-form .form-horizontal-element input{
+    width: calc(50% - 0.5em);
+}
+
+
+
+
+
+.contact-wrapper{
+    width: 900px;
+    margin: 2em auto;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto;
+}
+
+.contact-wrapper .contact-info{
+    width: 400px;
+    grid-column: 1 / 2;
+}
+
+.contact-wrapper .map-embed{
+    width: 400px;
+    grid-column: 2 / 3;
+}
+
+
+
+
+#programmes-container{
+    display: flex;
+    width: 100%;
+    padding: 1em 3em;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#programmes-container h2 {
+    text-transform: uppercase;
+}
+
+.course-wrapper{
+    flex: 50%;
+    padding: 1em;
+}
+
+#wrapper-4{
+    flex: 0.48;
+}
+
+.course-item{
+    background-color: #ccc;
+    padding: 0.3em 1em 1.2em 1em;
+}
+
+.course-item h2 {
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.course-item p{
+    font-size: 0.6em;
+    line-height: 1.5em;
+}
+
+.level{
+    float: right;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 964px){
+    #logo img{
+          margin-left: 20px;
+          margin-top: 10px;
+          max-width: 20%;
+    }
+     #logo{
+         display: block;
+         padding: 0;
+         width: 100%;
+         float: none;
+     }
+
+
+
+    .toggle{
+        display: block;
+        background-color: #00457c;
+        color: #fff;
+        font-size: 17px;
+        padding: 14px 20px;
+        text-decoration: none;
+        border: none;
+        float: right;
+        max-width: 9em;
+        display: flex;
+        align-items: center;
+    }
+    nav ul{
+        display: none;
+        width:100%;
+    }
+    [id^=drop]:checked + ul{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+      #logo img{
+          margin-top: 20px;
+          margin-left: 20px;
+          max-width: 20%;
+      }
+      #logo{
+        display: block;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        float: none;
+    }
+     
+      .toggle{
+          display: block;
+          background-color: #00457c;
+          color: #fff;
+          font-size: 17px;
+          padding: 14px 20px;
+          margin-bottom: 10px;
+          float: right;
+          text-decoration: none;
+          border: none;
+          cursor: pointer;
+          max-width: 9em;
+          display: flex;
+          align-items: center;
+      }
+
+      
+    .card{
+        width: 95%;
+        margin: 0 auto;
+        padding: 2em 0;
+    }
+
+    #section-two .offers-wrapper{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .offers-card{
+        margin-bottom: 20px;
+    }
+
+    .application-form .form-horizontal-element{
+        flex-direction: column;
+    }
+
+    .application-form .form-horizontal-element input{
+        width: 100%;
+    }
+
+    #programmes-container{
+        padding: 1em;
+    }
+
+    #wrapper-4{
+        flex: 1;
+    }
+     
+    footer{
+        padding: 1.5em;
+        flex-direction: column;
+    }
+
+    footer .location, footer .follow{
+        flex: 1;
+        text-align: center;
+    }
+
+    footer .location{
+        margin-bottom: 1em;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

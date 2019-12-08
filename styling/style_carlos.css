@@ -1,0 +1,29 @@
+body {
+    padding: 5%;
+}
+
+#programmes-container h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.course-item {
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 5px 5px 20px rgb(121, 108, 108);
+    background-color: #5d0077;
+    font-size: 1.2em;
+    color:white;
+    overflow: auto;
+}
+
+.course-item > h2 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.level {
+    float: right;
+    font-size: 200%;
+    font-weight: bold;
+}

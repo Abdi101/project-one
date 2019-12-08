@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://use.fontawesome.com/a422ff021a.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="styling/style.css">
+    <title>application</title>
+</head>
+<body>
+        <nav>
+                <label for="drop" class="toggle">
+                    <i class="fas fa-bars"></i>
+                    <h1>Menu</h1>
+                </label>
+
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="/images/logo_ntnu_u-slagord.png" alt="This is the ntnu logo">
+                    </a>
+                </div>
+                <input type="checkbox" id="drop">
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="application.html">Application</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+              <div class="wrapper">
+                <form class="application-form" action="submit-application" method="post" name="application-form">
+                    <div class="heading" >                     
+                        <h2>Application Form</h2>
+                    </div>
+
+                    <div class="form-horizontal-element">
+                        <label for="firstname" style="display:none;">First name</label>
+                        <input class="form-element" placeholder="First name" type="text" name="firstname" required>
+
+                        <label for="surname" style="display:none;">Surname</label>
+                        <input class="form-element" placeholder="Surname" type="text" name="surname" required>
+                    </div>
+
+                    <div class="form-horizontal-element">
+                        <label for="phone" style="display:none;">Mobile phone</label>
+                        <input class="form-element" placeholder="Mobile phone" name="phone" required>
+                        
+                        <label for="email" style="display:none;">Email address</label>
+                        <input class="form-element" placeholder="Email address" type="email" name="email" required>
+                    </div>
+                    
+                    <label for="program" style="display:none;">Select program</label>
+                    <select class="form-element" name="program" required>
+                        <option value="" selected="true" disabled>Select program</option>
+                        <option value="BWU">BWU - Bachelor in Web Development</option>
+                        <option value="BIXD">BIXD - Bachelor in Interaction Design</option>
+                        <option value="BMED">BMED - Bachelor in Graphic Design</option>
+                        <option value="ARWEB">ARWEB - Year study in Web Design</option>
+                        <option value="MIXD">MIXD - Master in Interaction Design</option>
+                    </select>
+                    
+                    <label for="background" style="display:none;">Background</label>
+                    <textarea class="form-element" name="background" cols="40" rows="10" maxlength="2000"
+                    placeholder="Please tell us about your academic background." required></textarea>
+                    
+                    <label for="comment" style="display:none;">Other comment</label>
+                    <textarea class="form-element" name="comment" cols="40" rows="10" maxlength="2000"
+                    placeholder="Any comment you want to add"></textarea>
+                    
+                    <input class="form-element" type="Submit" value="Submit">
+                </form>
+            </div>
+            <footer>
+                    <div class="location">
+                       <ul>
+                          <h5>Location</h5>
+                            <p>Raufossvegen 40, <br>2821 Gjøvik</p>
+                            <p>Telephone : (+47) 61135400</p>
+                            <h5>Map of the building:
+                                <a href="https://use.mazemap.com/#v=1&zlevel=2&center=10.683471,60.790193&zoom=18.2&campusid=55" target="_blank">Building A</a>
+                         </h5>
+                       </ul>
+                    </div>
+     
+                    <div class="follow" >
+                       <ul>
+                           <h5>Follow Us</h5>
+                             <li><a href="#" title="Go visit Ntnu design gjøvik on facebook"><i class="fab fa-facebook"></i>Facebook</a></li>
+                             <li><a href="#" title="Go visit Ntnu design gjøvik on Instagram"><i class="fab fa-instagram"></i>Instagram</a></li>
+                             <li><a href="#" title="Go visit Ntnu design gjøvik on facebook"><i class="fab fa-twitter"></i>Twitter</a></li>
+                        </ul>
+                    </div>
+                </footer>
+</body>
+</html>
